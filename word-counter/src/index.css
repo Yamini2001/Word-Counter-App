@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif !important;
   
 }
  
@@ -239,6 +239,30 @@ nav ul li a:hover {
 
 .ant-menu-item {
   display: inline-block; /* Ensure menu items are displayed inline */
+}
+
+.menu_container ul 
+{
+  background-color: #f5f7fa !important;
+  border: none !important;
+}
+
+/* For Webkit browsers like Chrome and Safari */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b0b0b0; /* Color of the scrollbar thumb */
+  border-radius: 6px; /* Roundness of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #757575; /* Color of the scrollbar thumb on hover */
 }
 
 
