@@ -33,7 +33,7 @@ const App = () => {
 
   return (
     <>
-      <Divider orientation="left"></Divider>
+      <Divider style={{border:'none'}} orientation="left" ></Divider>
       {!showBlocks && ( 
         <div style={{ textAlign: 'center', marginTop: '50px', margin:'20px'}}>
           <Button type="primary" style={{ marginRight: '10px' }} onClick={handleAddBlock}>Add Block</Button>
@@ -45,17 +45,18 @@ const App = () => {
           <Col className="gutter-row" span={24}>
             <div className="wrapper">
               <Text className='text' style={{ color: '#B6BBC5' }}>WORDS</Text>
-              <Text className="word-count">{`${wordCount}`}</Text>
-              <Text style={{ marginLeft: '20px',color: '#B6BBC5' }}>CHARACTERS</Text>
+              <Text className="word-count ">{`${wordCount}`}</Text>
+              <Text className='text' style={{ marginLeft: '20px',color: '#B6BBC5' }}>CHARACTERS</Text>
               <Text className="char-count" style={{ left: '-70px' }}>{`${charCount}`}</Text>
-              <Text style={{ marginLeft: '20px',color: '#B6BBC5'}}>SENTENCES</Text>
+              <Text className='text' style={{ marginLeft: '20px',color: '#B6BBC5'}}>SENTENCES</Text>
               <Text className="sentence-count" style={{ left: '-70px' }}>{`${sentenceCount}`}</Text>
+              {/* <Divider style={{border:'none'}} orientation="left" ></Divider> */}
               <Input.TextArea
                 rows={4}
                 placeholder="Enter text here..."
                 value={text}
                 onChange={handleTextChange}
-                className="custom-textarea"
+                style={{ border: '2px solid #E6F4FF', outline: 'none',height:'22vh',wordWrap: 'break-word', }}
               />
             </div>
           </Col>
