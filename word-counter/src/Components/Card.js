@@ -39,6 +39,7 @@ const App = () => {
         <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
           <Col className="gutter-row" span={24}>
             <div className="wrapper">
+              <div className="wrapper_card">
               <Text className='text'>WORDS</Text>
               <Text className="word-count">{`${wordCount}`}</Text>
               <Text style={{ marginLeft: '20px' }}>CHARACTERS</Text>
@@ -51,6 +52,7 @@ const App = () => {
                 value={text}
                 onChange={handleTextChange}
               />
+            </div>
             </div>
           </Col>
           <Col className="gutter-row" span={24}>
