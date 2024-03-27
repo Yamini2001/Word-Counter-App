@@ -10,7 +10,7 @@ const App = () => {
   const [wordCount, setWordCount] = useState(0);
   const [charCount, setCharCount] = useState(0);
   const [sentenceCount, setSentenceCount] = useState(0);
-  const [showBlocks, setShowBlocks] = useState(false); // State to manage whether blocks should be displayed
+  const [showBlocks, setShowBlocks] = useState(false); 
 
   const handleTextChange = (e) => {
     const newText = e.target.value;
