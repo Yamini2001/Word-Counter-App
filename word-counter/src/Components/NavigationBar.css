@@ -68,7 +68,7 @@ nav ul li a:hover::after {
 }
  
 nav li a:hover {
-  color: #ff5c11 !important;
+  color: black !important;
   text-decoration: underline;
 }
  
@@ -93,7 +93,7 @@ nav li a:hover {
   border: 0;
   outline: 0;
   border-radius: 6px;
-  background: #FF5344;
+  background: black;
   color: #ffffff;
   font-weight: 500;
   cursor: pointer;
@@ -106,7 +106,7 @@ nav li a:hover {
   border: 0;
   outline: 0;
   border-radius: 0px 6px 6px 0px;
-  background: #FF5344;
+  background: black;
   color: #ffffff;
   font-weight: 500;
   cursor: pointer;
@@ -229,7 +229,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ff5c11 !important;
+  color: black !important;
   text-decoration: underline;
 }
 

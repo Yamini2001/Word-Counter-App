@@ -1,33 +1,37 @@
 .wrapper{
-    height:40vh;
-    background-color: #FFFFFF !important;
-    /* background: '#0092ff'; */
-    padding: 20px 30px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    border-radius: 6px;
-    margin-top: 2rem;
-    position:relative;
-    color: #B6BBC5;
+  height:45vh;
+  background-color: #FFFFFF !important;
+  /* background: '#0092ff'; */
+  padding: 20px 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 6px;
+  margin-top: 1rem;
+  position:relative;
+  color: #B6BBC5;
 }
 .wrapper > :not(:first-child) {
-    margin-top: 38px;
-  }
-  /* .text{
-    margin-top:20px;
-    font-style: initial;
-  }
-   */
-  .word-count,.char-count,.sentence-count {
-    position: relative;
-    bottom: -30px; /* Adjust this value to change the distance between WORDS and word count */
-    left: -40px;
-    font-weight:bolder;
-    font-size: 23px;
-  }
+  margin-top: 30px;
+  
+}
+/* .text{
+  margin-top:20px;
+  font-style: initial;
+}
+ */
+.word-count,.char-count,.sentence-count {
+  position: relative;
+  bottom: -30px; /* Adjust this value to change the distance between WORDS and word count */
+  left: -40px;
+  font-weight:bolder;
+  font-size: 20px;
+}
 
-  .text
-  {
-    font-size: 12px;
-    font-weight: 500;
-  }
- 
+.text
+{
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+
+
