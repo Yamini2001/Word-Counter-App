@@ -1,0 +1,9 @@
+.wrapper{
+    height:40vh;
+    background-color: #FFFFFF !important;
+    /* background: '#0092ff'; */
+    padding: '10px 20px';
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 6px;
+    margin-top: 2rem;
+}
