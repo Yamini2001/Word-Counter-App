@@ -2,13 +2,12 @@
     height:40vh;
     background-color: #FFFFFF !important;
     /* background: '#0092ff'; */
-    padding: 10px 20px;
+    padding: 20px 30px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 6px;
     margin-top: 2rem;
     position:relative;
     color: #B6BBC5;
-    border:none;
 }
 .wrapper > :not(:first-child) {
     margin-top: 38px;
@@ -22,10 +21,13 @@
     position: relative;
     bottom: -30px; /* Adjust this value to change the distance between WORDS and word count */
     left: -40px;
-    font-weight:bold;
-    font-size: 19px;
+    font-weight:bolder;
+    font-size: 23px;
   }
-  .custom-textarea {
-    border: none; /* Remove the border */
+
+  .text
+  {
+    font-size: 12px;
+    font-weight: 500;
   }
  
