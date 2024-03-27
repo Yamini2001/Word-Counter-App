@@ -1,7 +1,9 @@
+
+// Card.js code
 import React, { useState } from 'react';
 import { Col, Divider, Row, Input, Typography } from 'antd';
-import '../style/Card.css';
 import ImageUpload from './ImageUpload'; // Import the ImageUpload component
+import '../style/Card.css';
 
 const { Text } = Typography;
 
@@ -14,7 +16,7 @@ const App = () => {
   const handleTextChange = (e) => {
     const newText = e.target.value;
     setText(newText);
-    // Count words in the text
+    // Count words and characters in the text
     const words = newText.trim().split(/\s+/);
     setWordCount(words.length);
     setCharCount(newText.length);
