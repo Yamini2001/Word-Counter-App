@@ -25,7 +25,7 @@ const NavigationBar = () => {
 
       </div>
 
-      <div className="menu_container">
+      <div className="menu_container" style={{ backgroundColor: '#F5F7FA' }}>
         <Menu mode="horizontal">
           <Menu.Item key="home">
             <Link to="/" className="active">Home</Link>
@@ -68,7 +68,6 @@ const NavigationBar = () => {
           <Menu.Item key="login">
             <Link to="/login">Login</Link>
           </Menu.Item>
-          {/* Add other menu items for the drawer */}
         </Menu>
       </Drawer>
     </nav>

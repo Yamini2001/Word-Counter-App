@@ -8,6 +8,7 @@
     margin-top: 2rem;
     position:relative;
     color: #B6BBC5;
+    border:none;
 }
 .wrapper > :not(:first-child) {
     margin-top: 38px;
@@ -21,7 +22,10 @@
     position: relative;
     bottom: -30px; /* Adjust this value to change the distance between WORDS and word count */
     left: -40px;
-    font-weight:bolder;
-    font-size: 23px;
+    font-weight:bold;
+    font-size: 19px;
+  }
+  .custom-textarea {
+    border: none; /* Remove the border */
   }
  

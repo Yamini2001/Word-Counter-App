@@ -55,6 +55,7 @@ const App = () => {
                 placeholder="Enter text here..."
                 value={text}
                 onChange={handleTextChange}
+                className="custom-textarea"
               />
             </div>
           </Col>

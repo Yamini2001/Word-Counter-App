@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   border:none;
+  /* background-color:grey; */
 }
  
 .container {
@@ -224,6 +225,7 @@ nav ul li a {
   font-weight: 700;
   line-height: normal;
   transition: text-decoration 0.3s;
+  background-color: #F5F7FA;
 }
 
 nav ul li a:hover {
@@ -238,5 +240,12 @@ nav ul li a:hover {
 
 .ant-menu-item {
   display: inline-block; /* Ensure menu items are displayed inline */
+  background-color: '#F5F7FA'!important;
 }
-
+.menu-container{
+  background-color: #F5F7FA !important; /* Add !important if needed */
+}
+.Menu .Menu.Item .Link.active {
+  color: blue; /* Change color for active link */
+  font-weight: bold; /* Bold font for active link */
+}
