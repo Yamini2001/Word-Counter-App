@@ -2,14 +2,15 @@
     height:40vh;
     background-color: #FFFFFF !important;
     /* background: '#0092ff'; */
-    padding: 2rem;
+    padding: 10px 20px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 6px;
     margin-top: 2rem;
-    position: relative;
+    position:relative;
+    color: #B6BBC5;
 }
 .wrapper > :not(:first-child) {
-    margin-top: 48px;
+    margin-top: 38px;
   }
   /* .text{
     margin-top:20px;
