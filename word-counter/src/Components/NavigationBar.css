@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  border:none;
 }
  
 .container {
@@ -229,6 +230,7 @@ nav ul li a:hover {
   color: #ff5c11 !important;
   text-decoration: underline;
 }
+
 
 .ant-menu {
   list-style: none; /* Remove default list style */
