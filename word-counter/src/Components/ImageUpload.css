@@ -1,0 +1,29 @@
+.file-upload-container {
+  border: 2px dashed #ccc;
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin: auto; /* Center the container horizontally */
+}
+
+.file-upload-icon {
+  color: black;
+  font-size: 6rem;
+}
+
+.file-upload-message {
+  margin-top: 10px;
+}
+
+.file-name {
+  margin-top: 10px;
+}
+
+.file-upload-footer {
+  margin-top: 10px;
+}
+
+.file-upload-footer p {
+  margin-top: 20px;
+}

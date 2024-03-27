@@ -1,26 +1,42 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import './ImageUpload.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCloudUploadAlt } from '@fortawesome/free-solid-svg-icons';
 
 const ImageUpload = () => {
-  const [image, setImage] = useState(null);
+  const [file, setFile] = useState(null);
+  const fileInputRef = useRef(null);
 
-  const handleImageChange = (e) => {
-    const selectedImage = e.target.files[0];
-    if (selectedImage) {
-      // Validate file type (optional)
-      const validTypes = ['image/jpeg', 'image/png', 'image/gif'];
-      if (validTypes.includes(selectedImage.type)) {
-        // Set the selected image
-        setImage(URL.createObjectURL(selectedImage));
-      } else {
-        alert('Please select a valid image file (JPEG, PNG, or GIF)');
-      }
-    }
+  const handleFileChange = (event) => {
+    setFile(event.target.files[0]);
+  };
+
+  const handleContainerClick = () => {
+    fileInputRef.current.click();
   };
 
   return (
     <div>
-      <input type="file" accept="image/*" onChange={handleImageChange} />
-      {image && <img src={image} alt="Uploaded" style={{ maxWidth: '100%', marginTop: '10px' }} />}
+      <div className="file-upload-container" onClick={handleContainerClick}>
+        {file ? (
+          <p className="file-name">{file.name}</p>
+        ) : (
+          <>
+            <FontAwesomeIcon icon={faCloudUploadAlt} className="file-upload-icon" />
+            <p className="file-upload-message">Drag and Drop file here or Choose file</p>
+          </>
+        )}
+        <input
+          type="file"
+          accept=".xls,.xlsx"
+          onChange={handleFileChange}
+          style={{ display: 'none' }}
+          ref={fileInputRef}
+        />
+      </div>
+      <div className="file-upload-footer">
+        <p className='format'>Supported formats: .xls, .xlsx</p>
+      </div>
     </div>
   );
 };
