@@ -1,4 +1,4 @@
-# Word Counter App
+# Word-Counter-App
 
 The Word Counter App is a web application built with React that allows users to count the number of words, characters, and sentences in a text input. Additionally, users can upload and display images from their local computer.
 
